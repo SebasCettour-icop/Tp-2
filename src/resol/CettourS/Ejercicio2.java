@@ -11,7 +11,7 @@ public class Ejercicio2 {
         LocalDate fecha_actual = LocalDate.now();
 
         try {
-            System.out.println("Ingresa tu fecha de nacimiento");
+            System.out.println("Ingresa tu fecha de nacimiento (dd/mm/aaaa)");
             String fecha_nac = scanner.nextLine();
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
             LocalDate fecha_nacimiento = LocalDate.parse(fecha_nac, formatter);

@@ -33,6 +33,18 @@ public class Principal {
                     new Ejercicio2().resolver();
                     break;
 
+                case 3:
+                    new Ejercicio3().resolver();
+                    break;
+
+                case 4:
+                    new Ejercicio4().resolver();
+                    break;
+
+                case 5:
+                    new Ejercicio5().resolver();
+                    break;
+
                 case 0:
                     System.out.println("Saliendo...");
                     break;
