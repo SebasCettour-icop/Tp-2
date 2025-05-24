@@ -22,7 +22,13 @@ public class Principal {
             System.out.println("0. Salir");
             System.out.print("Selecciona una opción (0-10): ");
 
-            opcion = scanner.nextInt();
+            String entrada = scanner.nextLine();
+            try {
+                opcion = Integer.parseInt(entrada);
+            } catch (NumberFormatException e) {
+                opcion = -1;
+            }
+
 
             switch (opcion) {
                 case 1:
@@ -43,6 +49,14 @@ public class Principal {
 
                 case 5:
                     new Ejercicio5().resolver();
+                    break;
+
+                case 6:
+                    new Ejercicio6().resolver();
+                    break;
+
+                case 7:
+                    new Ejercicio7().resolver();
                     break;
 
                 case 0:
