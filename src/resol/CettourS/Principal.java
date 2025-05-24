@@ -63,6 +63,14 @@ public class Principal {
                     new Ejercicio8().resolver();
                     break;
 
+                case 9:
+                    new Ejercicio9().resolver();
+                    break;
+
+                case 10:
+                    new Ejercicio10().resolver();
+                    break;
+
                 case 0:
                     System.out.println("Saliendo...");
                     break;
@@ -71,6 +79,5 @@ public class Principal {
             }
         } while (opcion != 0);
 
-        scanner.close();
     }
 }

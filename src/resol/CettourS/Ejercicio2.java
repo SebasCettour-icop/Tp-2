@@ -14,20 +14,20 @@ public class Ejercicio2 {
             System.out.println("Ingresa tu fecha de nacimiento (dd/mm/aaaa)");
             String fecha_nac = scanner.nextLine();
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-            LocalDate fecha_nacimiento = LocalDate.parse(fecha_nac, formatter);
+            LocalDate fechaNacimiento = LocalDate.parse(fecha_nac, formatter);
 
-            LocalDate actual = fecha_nacimiento;
+            LocalDate actual = fechaNacimiento;
             int contador = 0;
 
-            for (actual = fecha_nacimiento; actual.isBefore(fecha_actual); actual = actual.plusDays(1)) {
+            for (actual = fechaNacimiento; actual.isBefore(fecha_actual); actual = actual.plusDays(1)) {
                 contador++;
 
 
             }
-            System.out.println("Han transcurrido " + contador + " días desde tu nacimiento");
+            System.out.println(Colores.BOLD + Colores.CYAN + "Han transcurrido " + contador + " días desde tu nacimiento" + Colores.RESET);
 
         } catch (DateTimeParseException e) {
-            System.out.println("Formato inválido. Usá el formato dd/MM/yyyy");
+            System.out.println(Colores.BOLD + Colores.ROJO + "Formato inválido. Usá el formato dd/MM/yyyy" + Colores.RESET);
         }
     }
 }

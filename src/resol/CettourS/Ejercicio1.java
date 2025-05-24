@@ -11,23 +11,23 @@ public class Ejercicio1 {
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 
         try {
-            System.out.println("Ingrese una fecha (dd/mm/aaaa):");
+            System.out.println("Ingrese una fecha (dd/MM/aaaa):");
             String fecha1Texto = scanner.nextLine();
             Date fecha1 = formato.parse(fecha1Texto);
 
-            System.out.println("Ingrese otra fecha (dd/mm/aaaa):");
+            System.out.println("Ingrese otra fecha (dd/MM/aaaa):");
             String fecha2Texto = scanner.nextLine();
             Date fecha2 = formato.parse(fecha2Texto);
 
             if (fecha1.after(fecha2)) {
-                System.out.println("La primera fecha es mayor a la segunda.");
+                System.out.println( Colores.BOLD + Colores.VERDE + "La primera fecha es mayor a la segunda." + Colores.RESET);
             } else if (fecha1.before(fecha2)) {
-                System.out.println("La segunda fecha es mayor a la primera.");
+                System.out.println(Colores.BOLD + Colores.AMARILLO + "La segunda fecha es mayor a la primera." + Colores.RESET);
             } else {
-                System.out.println("Ambas fechas son iguales.");
+                System.out.println(Colores.BOLD + Colores.CYAN + "Ambas fechas son iguales." + Colores.RESET);
             }
         } catch (ParseException e) {
-            System.out.println("Formato de fecha inválido. Usá dd/MM/yyyy.");
+            System.out.println("Formato de fecha inválido. Usá dd/MM/yyyy." + Colores.RESET);
         }
     }
 }

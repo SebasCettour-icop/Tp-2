@@ -24,9 +24,9 @@ public class Ejercicio6 {
             }
 
             long diasRestantes = ChronoUnit.DAYS.between(hoy, proximoCumple);
-            System.out.println("Faltan " + diasRestantes + " días para tu próximo cumpleaños.");
+            System.out.println(Colores.BOLD + Colores.CYAN + "Faltan " + diasRestantes + " días para tu próximo cumpleaños." +Colores.RESET);
         } catch (DateTimeParseException e) {
-            System.out.println("Formato inválido. Usá el formato dd/MM/yyyy.");
+            System.out.println(Colores.BOLD + Colores.ROJO + "Formato inválido. Usá el formato dd/MM/yyyy." +Colores.RESET);
         }
     }
 

@@ -9,7 +9,7 @@ public class Ejercicio7 {
         int n = scanner.nextInt();
 
         for (int i = 1; i <= n; i++) {
-            System.out.println("*".repeat(i));
+            System.out.println(Colores.AMARILLO + "*".repeat(i) + Colores.RESET);
         }
     }
 }

@@ -12,15 +12,15 @@ public class Ejercicio5 {
         long diasRestantes = ChronoUnit.DAYS.between(fechaActual, fechaExamen);
 
         if (diasRestantes > 0) {
-            System.out.println("Faltan " + diasRestantes + " días para el examen");
+            System.out.println(Colores.BOLD + Colores.CYAN + "Faltan " + diasRestantes + " días para el examen" + Colores.RESET);
 
         } else if (diasRestantes == 0) {
-            System.out.println("¡El examen es hoy!");
-        }else {
-            System.out.println("El exámen pasó hace " + Math.abs(diasRestantes) + " días");
+            System.out.println(Colores.BOLD + Colores.AMARILLO + "¡El examen es hoy!" + Colores.RESET);
+        } else {
+            System.out.println(Colores.BOLD + Colores.ROJO + "El exámen pasó hace " + Math.abs(diasRestantes) + " días" + Colores.RESET);
         }
 
-        System.out.println("Quedan " + clasesRestantes + " clases hasta el exámen");
+        System.out.println(Colores.BOLD + Colores.CYAN + "Quedan " + clasesRestantes + " clases hasta el exámen" + Colores.RESET);
 
 
     }
