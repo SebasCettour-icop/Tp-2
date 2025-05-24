@@ -59,6 +59,10 @@ public class Principal {
                     new Ejercicio7().resolver();
                     break;
 
+                case 8:
+                    new Ejercicio8().resolver();
+                    break;
+
                 case 0:
                     System.out.println("Saliendo...");
                     break;
